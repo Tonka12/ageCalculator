@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeCalc</title>
+    <link rel="stylesheet" href="/ageCalc.css">
+    <script>
+        window.onload = function () {
+            var button = document.getElementById("kopce");
+            var nevalideninput = document.getElementById("requiredFields");
+            var denNevaliden = document.getElementById("day");
+            var mesecNevaliden = document.getElementById("month");
+            var godinaNevalidna = document.getElementById("year");
+            var denMora = document.getElementById("dayRequired");
+            var mesecMora = document.getElementById("monthRequired");
+            var godinaMora = document.getElementById("yearRequired");
+            button.addEventListener('mousedown', function(){
+                this.style.backgroundColor = "black";
+            });
+            button.addEventListener('mouseup', function(){
+                this.style.backgroundColor = "";
+            });
+            document.getElementById("kopce").onclick = function () {
+                var inputDay = Number(document.getElementById("zemiDen").value);
+                var inputMonth = Number(document.getElementById("zemiMesec").value);
+                var inputYear = Number(document.getElementById("zemiGodina").value);
+                var currentDateTest = new Date();
+                console.log(inputDay,inputMonth,inputYear);
+                if(inputDay === 0 || inputMonth === 0 || inputYear === 0){
+                    nevalideninput.style.color = "hsl(0, 100%, 67%)";
+                    denNevaliden.style.color = "hsl(0, 100%, 67%)";
+                    mesecNevaliden.style.color = "hsl(0, 100%, 67%)";
+                    godinaNevalidna.style.color = "hsl(0, 100%, 67%)";
+                }
+                else if(inputDay > 31 || inputMonth > 11 || inputYear > 2024)
+                {
+                    if(inputDay > 31) {
+                      denMora.innerText = "Must be a valid day";
+                    }
+                    if(inputMonth > 11) {
+                      mesecMora.innerText = "Must be a valid month";
+                    }
+                    if(inputYear > 2024) {
+                      godinaMora.innerText = "Must be a valid year";
+                    }
+                }
+                else{
+                inputMonth--;
+                nevalideninput.style.color = "";
+                denNevaliden.style.color = "";
+                mesecNevaliden.style.color = "";
+                godinaNevalidna.style.color = "";
+
+                var currentDate = new Date();
+                var birthDate = new Date(inputYear, inputMonth, inputDay);
+
+                var years = currentDate.getFullYear() - birthDate.getFullYear();
+                var months = currentDate.getMonth() - birthDate.getMonth();
+                var days = currentDate.getDate() - birthDate.getDate();
+
+                if (months < 0 || (months === 0 && days < 0)) {
+                    years--; // Subtract a year if the current date is before the birthday in the current year
+                }
+
+                if (days < 0) {
+                    months--; // Subtract a month if the current date is before the birthday in the current month
+                    days += 30; // Add 30 days (approximation, not accurate for all months)
+                }
+
+                if (months < 0) {
+                    months += 12; // Add 12 months if months is negative
+                }
+
+                document.getElementById("setYear").innerText = years;
+                document.getElementById("setMonth").innerText = months;
+                document.getElementById("setDay").innerText = days;
+                staviGodina = document.getElementById("setYear");
+                staviMesec = document.getElementById("setMonth");
+                staviDen = document.getElementById("setDay");
+                staviGodina.style.color = "hsl(259, 100%, 65%)";
+                staviMesec.style.color = "hsl(259, 100%, 65%)";
+                staviDen.style.color = "hsl(259, 100%, 65%)";
+
+                var crti = document.getElementsByClassName("parallelogram");
+                for (var i = 0; i < crti.length; i++) {
+                    crti[i].style.display = "none";
+                }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="mainContainer">
+        <p class="date">
+            <span id="day" class="date">DAY</span>
+            <span id="month" class="date">MONTH</span>
+            <span id="year" class="date">YEAR</span>
+        </p>
+        <span><input type="number" id="zemiDen" class="inputs" placeholder="DD">
+        <span><input type="number"id="zemiMesec" class="inputs" placeholder="MM"></span>
+        <span><input type="number" id="zemiGodina" class="inputs" placeholder="YYYY"></span>
+        <p id="requiredFields">
+            <span id="dayRequired">This field is required</span>
+            <span id="monthRequired">This field is required</span>
+            <span id="yearRequired">This field is required</span></p>
+        <div class="circle">
+            <button id="kopce"></button>
+        </div>
+        <img id="arrowImg" src="/assets/images/icon-arrow.svg" alt="">
+        <hr id="line">
+        <div id="numbersDate">
+            <p id="transformYear"><span id="setYear" class="setNumbers">00</span><span id="textYear">years</span></p>
+            <p id="transformMonth"><span id="setMonth" class="setNumbers">00</span><span id="textMonth">months</span></p>
+            <p id="transformDay"><span id="setDay" class="setNumbers">00</span><span id="textDay">days</span></p>
+            </div>
+            <div id="parallelogram1" class="parallelogram"></div>
+            <div id="parallelogram2" class="parallelogram"></div>
+            <div id="parallelogram3" class="parallelogram"></div>
+            <div id="parallelogram4" class="parallelogram"></div>
+            <div id="parallelogram5" class="parallelogram"></div>
+            <div id="parallelogram6" class="parallelogram"></div>
+    </div>
+</body>
+</html>

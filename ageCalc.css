@@ -1,0 +1,284 @@
+@font-face {
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+    font-family: "Poppins-Regular";
+  }
+@font-face {
+    src: url("/assets/fonts/Poppins-Bold.ttf");
+    font-family: "Poppins-Bold";
+  }
+@font-face {
+    font-family: "Poppins-Italic";
+    src: url("/assets/fonts/Poppins-Italic.ttf");
+}
+@font-face {
+    font-family:"Poppins-ExtraBold" ;
+    src: url("/assets/fonts/Poppins-ExtraBold.ttf");
+}
+@font-face {
+    font-family:"Bold-Italic" ;
+    src: url("/assets/fonts/Poppins-BoldItalic.ttf");
+}
+@font-face {
+    font-family:"Poppins-ExtraBoldItalic";
+    src: url("/assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+body{
+    background-color:hsl(0, 0%, 86%);
+}
+#mainContainer{
+    width: 800px;
+    height: 650px;
+    background-color: hsl(0, 0%, 100%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px 30px 180px 30px;
+}
+.inputs{
+    width: 132px;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom:10px;
+    margin: 25px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 5px;
+    transform: translateY(65px) translateX(20px);
+    font-size: 32px;
+    font-family: "Poppins-Bold";
+}
+.inputs:focus{
+    outline-color: hsl(259, 100%, 65%)    !important;
+}
+.date{
+    letter-spacing:3px ;
+    font-size: 14px;
+    font-family: "Poppins-Bold";
+    color: hsl(0, 1%, 44%);
+    transform: translateY(100px) translateX(49px);
+    margin-right: 154px;
+}
+#month{
+    margin-left: 11px;
+}
+#year{
+    margin-left: -20px;
+}
+#arrowImg{
+    transform: translateX(687px) translateY(-35px); 
+}
+.circle{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 140px;
+    border-radius: 50%;
+    transform: translateX(640px) translateY(35px);
+}
+#kopce{
+    height: 90px;
+    width: 90px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    z-index: 999;
+    border:none;
+}
+#line{
+    width: 575px;
+    transform: translateY(-66px)translateX(-65px);
+}
+#setYear{
+    font-family: "Poppins-ExtraBoldItalic";
+    color: white;
+    font-size: 100px;   
+}
+#textYear{
+    font-family: "Poppins-ExtraBoldItalic";
+    color: black;
+    font-size:95px;
+}
+#transformYear{
+    transform: translateY(-80px)translateX(40px);
+}
+#setMonth{
+    font-family: "Poppins-ExtraBoldItalic";
+    color: white;
+    font-size: 100px;   
+}
+#textMonth{
+    font-family: "Poppins-ExtraBoldItalic";
+    color: black;
+    font-size:95px;
+}
+#transformMonth{
+    transform: translateY(-140px)translateX(34px);
+}
+#setDay{
+    font-family: "Poppins-ExtraBoldItalic";
+    color: white;
+    font-size: 100px;   
+}
+#textDay{
+    font-family: "Poppins-ExtraBoldItalic";
+    color: black;
+    font-size:95px;
+}
+#transformDay{
+    transform: translateY(-200px)translateX(30px);
+}
+#numbersDate{
+    transform: translateX(40px)translateY(-12px);
+}
+.parallelogram{
+    width: 45px;
+	height: 15px;
+	background: hsl(259, 100%, 65%);
+}
+#parallelogram1
+{
+    transform: translateX(70px) translateY(-515px) skew(-15deg);
+}
+#parallelogram2
+{
+    transform: translateX(70px) translateY(-430px) skew(-15deg);
+}
+#parallelogram3
+{
+    transform: translateX(70px) translateY(-350px) skew(-15deg);
+}
+#parallelogram4
+{
+    transform: translateX(135px) translateY(-560px) skew(-15deg);
+}
+#parallelogram5
+{
+    transform: translateX(135px) translateY(-475px) skew(-15deg);
+}
+#parallelogram6
+{
+    transform: translateX(135px) translateY(-395px) skew(-15deg);
+}
+#requiredFields{
+    color:white;
+    font-family: "Poppins-Italic";
+    transform: translateY(33px) translateX(45px);
+}
+#monthRequired{
+    margin-left: 66px;
+}
+#yearRequired{
+    margin-left: 64px;
+}
+@media (min-width:2560px) {
+    #mainContainer{
+    transform: translate(-50%,-50%) scale(1.7);
+    }
+}
+@media (max-width:1025px) {
+     #mainContainer{
+        transform: translate(-50%,-50%) scale(0.8);
+     }
+}
+@media (max-width:800px){
+    #mainContainer{
+        transform:translate(-50%,-50%) scale(0.6);
+    }
+}
+
+@media(max-width:430px) {
+    #mainContainer{
+        width: 470px;
+    }
+    .date{
+        letter-spacing:3px;
+        font-size: 14px;
+        font-family: "Poppins-Bold";
+        color: hsl(0, 1%, 44%);
+        transform: translateY(50px) translateX(39px);
+        margin-right: 50px;
+    }
+    .inputs{
+        width:90px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin-left:15px;
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 5px;
+        transform: translateY(20px) translateX(20px);
+        font-size: 32px;
+        font-family: "Poppins-Bold";
+    }
+    #month{
+        margin-left: 52px;
+    }
+    #year{
+        margin-left: 18px;
+    }
+    #arrowImg{
+        position: relative;
+        transform: translateY(-30px) translateX(218px);
+        z-index: 3;
+    }
+    #line{
+        position: relative;
+        width: 420px;
+        transform: translateY(-66px);
+        z-index: 1;
+    }
+    .circle{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 140px;
+        border-radius: 50%;
+        transform: translateX(170px) translateY(35px);
+        z-index: 2;
+    }
+    #kopce{
+        height: 90px;
+        width: 90px;
+        padding: 0;
+        border-radius: 50%;
+        background-color: hsl(259, 100%, 65%);
+        z-index: 999;
+        border:none;
+    }
+    #numbersDate{
+        transform: scale(0.8) translatex(-50px);
+    }
+    .parallelogram{
+        width: 35px;
+        height: 13px;
+        background: hsl(259, 100%, 65%);
+    }
+    #parallelogram1
+{
+    transform: translateX(35px) translateY(-455px) skew(-15deg);
+}
+#parallelogram2
+{
+    transform: translateX(35px) translateY(-390px) skew(-15deg);
+}
+#parallelogram3
+{
+    transform: translateX(35px) translateY(-330px) skew(-15deg);
+}
+#parallelogram4
+{
+    transform: translateX(90px) translateY(-494px) skew(-15deg);
+}
+#parallelogram5
+{
+    transform: translateX(90px) translateY(-429px) skew(-15deg);
+}
+#parallelogram6
+{
+    transform: translateX(90px) translateY(-369px) skew(-15deg);
+}
+}
