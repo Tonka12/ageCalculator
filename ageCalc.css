@@ -188,7 +188,7 @@ body{
     }
 }
 
-@media(max-width:430px) {
+@media(max-width:426px) {
     #mainContainer{
         width: 470px;
     }
