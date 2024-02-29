@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="msapplication-config" content="/assets/images/touch-icon-iphone.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
     <title>AgeCalc</title>
     <link rel="stylesheet" href="/ageCalc.css">
     <script>
@@ -93,12 +98,11 @@
                 var pomestiLevo = document.getElementById("numbersDate");
                 if(desktopWidth.matches)
                 {
-                    pomestiLevo.style.transform = "translateX(-80px) translateY(10px)";
+                    pomestiLevo.style.transform = "translateX(-80px) translateY(10px)"
                 }
                 if(phoneWidth.matches)
                 {
                     pomestiLevo.style.transform = "scale(0.8) translateX(-150px) translateY(-40px)";
-                    mesecMora.style.marginLeft = "-20px";
                 }
                 var crti = document.getElementsByClassName("parallelogram");
                 for (var i = 0; i < crti.length; i++) {
