@@ -92,7 +92,7 @@ body{
 }
 #setYear{
     font-family: "Poppins-ExtraBoldItalic";
-    color: white;
+    display: none;
     font-size: 100px;   
 }
 #textYear{
@@ -101,11 +101,11 @@ body{
     font-size:95px;
 }
 #transformYear{
-    transform: translateY(-80px)translateX(40px);
+    transform: translateY(-80px)translateX(170px);
 }
 #setMonth{
     font-family: "Poppins-ExtraBoldItalic";
-    color: white;
+    display: none;
     font-size: 100px;   
 }
 #textMonth{
@@ -114,11 +114,11 @@ body{
     font-size:95px;
 }
 #transformMonth{
-    transform: translateY(-140px)translateX(34px);
+    transform: translateY(-140px)translateX(160px);
 }
 #setDay{
     font-family: "Poppins-ExtraBoldItalic";
-    color: white;
+    display: none;
     font-size: 100px;   
 }
 #textDay{
@@ -127,7 +127,7 @@ body{
     font-size:95px;
 }
 #transformDay{
-    transform: translateY(-200px)translateX(30px);
+    transform: translateY(-200px)translateX(158px);
 }
 #numbersDate{
     transform: translateX(40px)translateY(-12px);
@@ -162,7 +162,7 @@ body{
     transform: translateX(135px) translateY(-395px) skew(-15deg);
 }
 #requiredFields{
-    color:white;
+    display: none;
     font-family: "Poppins-Italic";
     transform: translateY(33px) translateX(45px);
 }
@@ -250,7 +250,7 @@ body{
         border:none;
     }
     #numbersDate{
-        transform: scale(0.7) translatex(-20px) translateY(-75px);
+        transform: scale(0.8) translateX(-45px) translateY(-30px);
     }
     .parallelogram{
         width: 35px;
@@ -259,27 +259,27 @@ body{
     }
     #parallelogram1
 {
-    transform: translateX(35px) translateY(-487px) skew(-15deg);
+    transform: translateX(35px) translateY(-460px) skew(-15deg);
 }
 #parallelogram2
 {
-    transform: translateX(35px) translateY(-435px) skew(-15deg);
+    transform: translateX(35px) translateY(-400px) skew(-15deg);
 }
 #parallelogram3
 {
-    transform: translateX(35px) translateY(-375px) skew(-15deg);
+    transform: translateX(35px) translateY(-340px) skew(-15deg);
 }
 #parallelogram4
 {
-    transform: translateX(90px) translateY(-526px) skew(-15deg);
+    transform: translateX(90px) translateY(-499px) skew(-15deg);
 }
 #parallelogram5
 {
-    transform: translateX(90px) translateY(-472px) skew(-15deg);
+    transform: translateX(90px) translateY(-438px) skew(-15deg);
 }
 #parallelogram6
 {
-    transform: translateX(90px) translateY(-414px) skew(-15deg);
+    transform: translateX(90px) translateY(-379px) skew(-15deg);
 }
 #requiredFields{
     color:white;

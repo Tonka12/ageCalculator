@@ -27,8 +27,12 @@
                 var inputMonth = Number(document.getElementById("zemiMesec").value);
                 var inputYear = Number(document.getElementById("zemiGodina").value);
                 var currentDateTest = new Date();
+
+                const desktopWidth = window.matchMedia("(min-width:432px)");
+                const phoneWidth = window.matchMedia("(max-width:431px)");
                 console.log(inputDay,inputMonth,inputYear);
                 if(inputDay === 0 || inputMonth === 0 || inputYear === 0){
+                    nevalideninput.style.display = "block";
                     nevalideninput.style.color = "hsl(0, 100%, 67%)";
                     denNevaliden.style.color = "hsl(0, 100%, 67%)";
                     mesecNevaliden.style.color = "hsl(0, 100%, 67%)";
@@ -80,9 +84,20 @@
                 staviMesec = document.getElementById("setMonth");
                 staviDen = document.getElementById("setDay");
                 staviGodina.style.color = "hsl(259, 100%, 65%)";
+                staviGodina.style.display = "inline";
+                staviMesec.style.display = "inline";
+                staviDen.style.display = "inline";
                 staviMesec.style.color = "hsl(259, 100%, 65%)";
                 staviDen.style.color = "hsl(259, 100%, 65%)";
-
+                var pomestiLevo = document.getElementById("numbersDate");
+                if(desktopWidth.matches)
+                {
+                    pomestiLevo.style.transform = "translateX(-80px) translateY(-15px)";
+                }
+                if(phoneWidth.matches)
+                {
+                    pomestiLevo.style.transform = "scale(0.8) translateX(-150px) translateY(-40px)";
+                }
                 var crti = document.getElementsByClassName("parallelogram");
                 for (var i = 0; i < crti.length; i++) {
                     crti[i].style.display = "none";
