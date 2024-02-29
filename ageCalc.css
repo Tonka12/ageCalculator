@@ -130,7 +130,7 @@ body{
     transform: translateY(-200px)translateX(158px);
 }
 #numbersDate{
-    transform: translateX(40px)translateY(-12px);
+    transform: translateX(40px)translateY(12px);
 }
 .parallelogram{
     width: 45px;
@@ -139,27 +139,27 @@ body{
 }
 #parallelogram1
 {
-    transform: translateX(70px) translateY(-495px) skew(-15deg);
+    transform: translateX(70px) translateY(-475px) skew(-15deg);
 }
 #parallelogram2
 {
-    transform: translateX(70px) translateY(-415px) skew(-15deg);
+    transform: translateX(70px) translateY(-395px) skew(-15deg);
 }
 #parallelogram3
 {
-    transform: translateX(70px) translateY(-333px) skew(-15deg);
+    transform: translateX(70px) translateY(-310px) skew(-15deg);
 }
 #parallelogram4
 {
-    transform: translateX(135px) translateY(-540px) skew(-15deg);
+    transform: translateX(135px) translateY(-520px) skew(-15deg);
 }
 #parallelogram5
 {
-    transform: translateX(135px) translateY(-460px) skew(-15deg);
+    transform: translateX(135px) translateY(-440px) skew(-15deg);
 }
 #parallelogram6
 {
-    transform: translateX(135px) translateY(-378px) skew(-15deg);
+    transform: translateX(135px) translateY(-355px) skew(-15deg);
 }
 #requiredFields{
     display: none;
