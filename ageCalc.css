@@ -167,10 +167,10 @@ body{
     transform: translateY(33px) translateX(45px);
 }
 #monthRequired{
-    margin-left: 66px;
+    margin-left: 43px;
 }
 #yearRequired{
-    margin-left: 64px;
+    margin-left: 40px;
 }
 @media (min-width:2560px) {
     #mainContainer{
