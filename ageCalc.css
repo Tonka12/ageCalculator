@@ -197,7 +197,7 @@ body{
         font-size: 14px;
         font-family: "Poppins-Bold";
         color: hsl(0, 1%, 44%);
-        transform: translateY(50px) translateX(39px);
+        transform: translateY(75px) translateX(39px);
         margin-right: 50px;
     }
     .inputs{
@@ -208,15 +208,15 @@ body{
         margin-left:15px;
         border: 1px solid rgba(0,0,0,0.3);
         border-radius: 5px;
-        transform: translateY(20px) translateX(20px);
+        transform: translateY(39px) translateX(20px);
         font-size: 32px;
         font-family: "Poppins-Bold";
     }
     #month{
-        margin-left: 52px;
+        margin-left: 51px;
     }
     #year{
-        margin-left: 18px;
+        margin-left: 22px;
     }
     #arrowImg{
         position: relative;
@@ -250,7 +250,7 @@ body{
         border:none;
     }
     #numbersDate{
-        transform: scale(0.8) translatex(-50px);
+        transform: scale(0.7) translatex(-20px) translateY(-75px);
     }
     .parallelogram{
         width: 35px;
@@ -259,26 +259,38 @@ body{
     }
     #parallelogram1
 {
-    transform: translateX(35px) translateY(-455px) skew(-15deg);
+    transform: translateX(35px) translateY(-487px) skew(-15deg);
 }
 #parallelogram2
 {
-    transform: translateX(35px) translateY(-390px) skew(-15deg);
+    transform: translateX(35px) translateY(-435px) skew(-15deg);
 }
 #parallelogram3
 {
-    transform: translateX(35px) translateY(-330px) skew(-15deg);
+    transform: translateX(35px) translateY(-375px) skew(-15deg);
 }
 #parallelogram4
 {
-    transform: translateX(90px) translateY(-494px) skew(-15deg);
+    transform: translateX(90px) translateY(-526px) skew(-15deg);
 }
 #parallelogram5
 {
-    transform: translateX(90px) translateY(-429px) skew(-15deg);
+    transform: translateX(90px) translateY(-472px) skew(-15deg);
 }
 #parallelogram6
 {
-    transform: translateX(90px) translateY(-369px) skew(-15deg);
+    transform: translateX(90px) translateY(-414px) skew(-15deg);
+}
+#requiredFields{
+    color:white;
+    font-family: "Poppins-Italic";
+    transform: translateY(13px) translateX(30px);
+    font-size: 13px;
+}
+#monthRequired{
+    margin-left:13px;
+}
+#yearRequired{
+    margin-left: 11px;
 }
 }
