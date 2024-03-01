@@ -166,7 +166,8 @@ body{
     transform: translateX(135px) translateY(-355px) skew(-15deg);
 }
 #requiredFields{
-    display: none;
+    visibility: hidden;
+    position: absolute;
     font-family: "Poppins-Italic";
     transform: translateY(-30px) translateX(40px);
 }
