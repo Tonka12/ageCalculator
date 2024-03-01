@@ -24,6 +24,8 @@
 }
 body{
     background-color:hsl(0, 0%, 86%);
+    display: flex;
+    flex-wrap: nowrap;
 }
 #mainContainer{
     width: 800px;
@@ -43,9 +45,11 @@ body{
     margin: 25px;
     border: 1px solid rgba(0,0,0,0.3);
     border-radius: 5px;
-    transform: translateY(65px) translateX(20px);
+    margin-left: 35px;
+    margin-top: 58px;
     font-size: 32px;
     font-family: "Poppins-Bold";
+    vertical-align: top;
 }
 .inputs:focus{
     outline-color: hsl(259, 100%, 65%)    !important;
@@ -55,17 +59,17 @@ body{
     font-size: 14px;
     font-family: "Poppins-Bold";
     color: hsl(0, 1%, 44%);
-    transform: translateY(100px) translateX(49px);
+    transform: translateY(70px) translateX(40px);
     margin-right: 154px;
 }
 #month{
-    margin-left: 11px;
+    margin-left: 22px;
 }
 #year{
-    margin-left: -20px;
+    margin-left: -12px;
 }
 #arrowImg{
-    transform: translateX(687px) translateY(-35px); 
+    transform: translateX(687px) translateY(-55px); 
 }
 .circle{
     position: relative;
@@ -75,7 +79,7 @@ body{
     height: 90px;
     width: 140px;
     border-radius: 50%;
-    transform: translateX(640px) translateY(35px);
+    transform: translateX(640px) translateY(13px);
 }
 #kopce{
     height: 90px;
@@ -83,12 +87,12 @@ body{
     padding: 0;
     border-radius: 50%;
     background-color: hsl(259, 100%, 65%);
-    z-index: 999;
+    z-index: 4;
     border:none;
 }
 #line{
     width: 575px;
-    transform: translateY(-66px)translateX(-65px);
+    transform: translateY(-90px)translateX(-65px);
 }
 #setYear{
     font-family: "Poppins-ExtraBoldItalic";
@@ -164,13 +168,13 @@ body{
 #requiredFields{
     display: none;
     font-family: "Poppins-Italic";
-    transform: translateY(33px) translateX(45px);
+    transform: translateY(-30px) translateX(40px);
 }
 #monthRequired{
-    margin-left: 66px;
+    margin-left: 74px;
 }
 #yearRequired{
-    margin-left: 64px;
+    margin-left: 74px;
 }
 @media (min-width:2560px) {
     #mainContainer{
@@ -197,7 +201,7 @@ body{
         font-size: 14px;
         font-family: "Poppins-Bold";
         color: hsl(0, 1%, 44%);
-        transform: translateY(50px) translateX(39px);
+        transform: translateY(30px) translateX(28px);
         margin-right: 50px;
     }
     .inputs{
@@ -205,18 +209,19 @@ body{
         padding-left: 10px;
         padding-top: 10px;
         padding-bottom:10px;
-        margin-left:15px;
+        margin-left:21px;
+        margin-top:22px;
         border: 1px solid rgba(0,0,0,0.3);
         border-radius: 5px;
-        transform: translateY(20px) translateX(14px);
         font-size: 32px;
         font-family: "Poppins-Bold";
+        display: inline-block;
     }
     #month{
-        margin-left: 68px;
+        margin-left: 70px;
     }
     #year{
-        margin-left: 38px;
+        margin-left: 45px;
     }
     #arrowImg{
         position: relative;
@@ -284,13 +289,13 @@ body{
 #requiredFields{
     display:none;
     font-family: "Poppins-Italic";
-    transform: translateY(-11px) translateX(24px);
+    transform: translateY(-28px) translateX(15px);
     font-size: 13px;
 }
 #monthRequired{
-    margin-left:27px;
+    margin-left:35px;
 }
 #yearRequired{
-    margin-left: 29px;
+    margin-left: 35px;
 }
 }
