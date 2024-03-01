@@ -288,7 +288,6 @@ body{
     transform: translateX(90px) translateY(-379px) skew(-15deg);
 }
 #requiredFields{
-    display:none;
     font-family: "Poppins-Italic";
     transform: translateY(-28px) translateX(15px);
     font-size: 13px;
